@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1083283292686",
+    "firebase_url": "https://mare-d073b.firebaseio.com",
+    "project_id": "mare-d073b",
+    "storage_bucket": "mare-d073b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083283292686:android:21ee731629d7c3f096725f",
+        "android_client_info": {
+          "package_name": "com.duha.foodordering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083283292686-2ncv5fte8vc6rt06isha735tiud8n5l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvEqgyh3iWC0kHqWGtNwOY2WBx6Us1AEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083283292686-2ncv5fte8vc6rt06isha735tiud8n5l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
