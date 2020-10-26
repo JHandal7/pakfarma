@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
          binding.doneButton.setOnClickListener { addNickname(it) }
 
 //Alhamdulilah
+        // SubhanaAllah
+        
     }
 
     /**
