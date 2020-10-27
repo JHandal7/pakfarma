@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
 //Alhamdulilah
         // SubhanaAllah
+        //AllahuAkbar
         
     }
 
