@@ -51,8 +51,8 @@ public class DetailOrderProductListAdapter extends RecyclerView.Adapter<DetailOr
 
         }
 
-        holder.qty.setText("Qty: " + newsListResponse.get(position).getVarquantity());
-        holder.price.setText("Price: " + MyOrderedProductsDetailPage.currency + " " + newsListResponse.get(position).getVarprice());
+        holder.qty.setText("Cantidad: " + newsListResponse.get(position).getVarquantity());
+        holder.price.setText("Precio: " + MyOrderedProductsDetailPage.currency + " " + newsListResponse.get(position).getVarprice());
         try {
             Picasso.with(context)
                     .load(newsListResponse.get(position).getImage())

@@ -42,7 +42,7 @@
                     android:gravity="center"
                     android:layout_marginLeft="10dp"
                     android:textSize="14sp"
-                    android:text="View Order Details"
+                    android:text="Detalle de su Compra"
                     android:textColor="@color/colorPrimary" />
 
                 <TextView

@@ -39,7 +39,7 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersViewHolder> {
     @Override
     public void onBindViewHolder(MyOrdersViewHolder holder, final int position) {
         setProductsData(holder, position);
-        holder.date.setText("Date: " + orderes.get(position).getOrderdate());
+        holder.date.setText("Fecha: " + orderes.get(position).getOrderdate());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
