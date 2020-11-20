@@ -22,7 +22,7 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class AccountVerification extends AppCompatActivity {
-
+//version 3 candle
     @BindView(R.id.resendEmail)
     Button resendEmail;
     @BindView(R.id.email)
