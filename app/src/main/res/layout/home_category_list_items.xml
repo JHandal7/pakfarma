@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/categoryImage"
                 android:layout_centerHorizontal="true"
-                android:maxLines="2"
+                android:maxLines="4"
                 android:layout_margin="10dp"
                 android:text="as"
                 android:textColor="@color/black"

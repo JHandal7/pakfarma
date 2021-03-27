@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">PAK FARMA</string>
+    <string name="app_name">BlumeTrend</string>
     <string name="err_msg_email">Ingrese un nombre de correo valido</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Actualizar Informacion</string>
-    <string name="emailId">factura@pakfarma.com</string>
+    <string name="emailId">factura@blumetrend.com</string>
     <string name="contactNo">998179159</string>
     <string name="secure_payment_text"><![CDATA[Safe and Secure Payments. Easy returns <br />100% Authentic products]]></string>
 

@@ -8,7 +8,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_margin="5dp"
         android:background="?attr/selectableItemBackground"
         android:elevation="5dp"
@@ -21,7 +21,7 @@
             android:background="@color/color_white">
 
             <ImageView
-                android:id="@+id/productImage1"
+                android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_margin="5dp" />
@@ -30,88 +30,79 @@
                 android:id="@+id/add"
                 android:layout_width="75dp"
                 android:layout_height="28dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
+                android:layout_below="@id/productImage"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
                 android:src="@drawable/add_icon"
                 android:text="Agregue"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
 
-            <RelativeLayout
-                android:id="@+id/relativeLayout"
-                android:layout_width="match_parent"
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/add"
-                android:gravity="bottom"
-                android:paddingBottom="5dp"
-                android:paddingLeft="7dp"
-                android:paddingRight="5dp">
+                android:layout_below="@id/add"
+                android:maxLines="4"
+                android:minLines="2"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
 
+            <TextView
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/productName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="4"
-                    android:minLines="2"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBaseline="@+id/currency"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/currency"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/productName"
-                    android:maxLines="5"
-                    android:textColor="@color/black"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:id="@+id/price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/productName"
-                    android:maxLines="3"
-                    android:layout_toRightOf="@+id/currency"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="@color/black"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/actualPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/price"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/price"
+                android:maxLines="3"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/actualPrice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/price"
-                    android:layout_marginLeft="3dp"
-                    android:layout_toRightOf="@+id/price"
-                    android:maxLines="3"
-                    android:textColor="@color/light_black"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/discountPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/price"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/actualPrice"
+                android:maxLines="3"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/discountPercentage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/price"
-                    android:layout_marginLeft="3dp"
-                    android:layout_toRightOf="@+id/actualPrice"
-                    android:maxLines="3"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/variantsLayout"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:layout_below="@+id/relativeLayout"
-                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/price"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/variant_back">
 
                 <TextView
@@ -127,13 +118,12 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="10dp"
                     android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
                     android:src="@drawable/down_arrow" />
 
             </RelativeLayout>
         </RelativeLayout>
-
 
 
     </android.support.v7.widget.CardView>

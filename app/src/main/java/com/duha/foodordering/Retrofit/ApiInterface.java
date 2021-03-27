@@ -27,37 +27,37 @@ import retrofit.http.POST;
 public interface ApiInterface {
 
     // API's endpoints
-    @GET("/mare/app_dashboard/JSON/allitem.php")
+    @GET("/BlumeTrend/app_dashboard/JSON/allitem.php")
     public void getAllProducts(
             Callback<List<Product>> callback);
 
-    @GET("/mare/app_dashboard/JSON/recom.php")
+    @GET("/BlumeTrend/app_dashboard/JSON/recom.php")
     public void getRecommendedProducts(
             Callback<RecommendedProductsResponse> callback);
 
-    @GET("/mare/app_dashboard/JSON/pbyc.php")
+    @GET("/BlumeTrend/app_dashboard/JSON/pbyc.php")
     public void getCategoryList(Callback<List<CategoryListResponse>> callback);
 
-    @GET("/mare/app_dashboard/JSON/resdetails.php")
+    @GET("/BlumeTrend/app_dashboard/JSON/resdetails.php")
     public void getRestaurantDetail(Callback<RestaurantDetailResponse> callback);
 
-    @GET("/mare/app_dashboard/JSON/faq.php")
+    @GET("/BlumeTrend/app_dashboard/JSON/faq.php")
     public void getFAQ(Callback<FAQResponse> callback);
 
-    @GET("/mare/app_dashboard/JSON/terms.php")
+    @GET("/BlumeTrend/app_dashboard/JSON/terms.php")
     public void getTerms(Callback<TermsResponse> callback);
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/pushadd.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/pushadd.php")
     public void sendAccessToken(@Field("accesstoken") String accesstoken, Callback<RegistrationResponse> callback);
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/addwishlist.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/addwishlist.php")
     public void addToWishList(@Field("product_id") String product_id, @Field("user_id") String user_id, Callback<AddToWishlistResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/add-cart.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/add-cart.php")
     public void addToCart(@Field("product_id") String product_id, @Field("userid") String user_id,
                           @Field("varient_id") String varient_id, @Field("varient_quantity") String varient_quantity,
                           @Field("json_param") String json_param, @Field("varient_name") String varient_name,
@@ -66,37 +66,37 @@ public interface ApiInterface {
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/deletecart.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/deletecart.php")
     public void deleteCartItem(@Field("user_id") String user_id,
                                @Field("varient_id") String varient_id,
                                @Field("product_id") String product_id, Callback<AddToWishlistResponse> callback);
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/wishcheck.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/wishcheck.php")
     public void checkWishList(@Field("product_id") String product_id, @Field("user_id") String user_id, Callback<AddToWishlistResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/wishlist.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/wishlist.php")
     public void getWishList(@Field("user_id") String user_id, Callback<WishlistResponse> callback);
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/vieworders.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/vieworders.php")
     public void getMyOrders(@Field("user_id") String user_id, Callback<MyOrdersResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/viewcart.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/viewcart.php")
     public void getCartList(@Field("user_id") String user_id, Callback<CartistResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/userprofile.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/userprofile.php")
     public void getUserProfile(@Field("user_id") String user_id, Callback<UserProfileResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/updateprofile.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/updateprofile.php")
     public void updateProfile(@Field("user_id") String user_id,
                               @Field("name") String name,
                               @Field("city") String city,
@@ -111,17 +111,17 @@ public interface ApiInterface {
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/resentmail.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/resentmail.php")
     public void resentEmail(@Field("email") String email, Callback<SignUpResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/login.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/login.php")
     public void login(@Field("email") String email, @Field("password") String password, @Field("logintype") String logintype, Callback<SignUpResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/paystripe.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/paystripe.php")
     public void stripePayment(@Field("stripeToken") String stripeToken,
                               @Field("total") String total,
                               @Field("user_id") String user_id,
@@ -132,7 +132,7 @@ public interface ApiInterface {
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/addorders.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/addorders.php")
     public void addOrder(@Field("user_id") String user_id,
                          @Field("cart_id") String cart_id,
                          @Field("address") String address,
@@ -145,12 +145,12 @@ public interface ApiInterface {
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/forgot.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/forgot.php")
     public void forgotPassword(@Field("email") String email, Callback<SignUpResponse> callback);
 
 
     @FormUrlEncoded
-    @POST("/mare/app_dashboard/JSON/register.php")
+    @POST("/BlumeTrend/app_dashboard/JSON/register.php")
     public void registration(@Field("name") String name, @Field("email") String email, @Field("password") String password, @Field("logintype") String logintype, Callback<SignUpResponse> callback);
 
 
